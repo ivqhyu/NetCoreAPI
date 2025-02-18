@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>Hello from our View template</p>
+
+<form asp-action="Index">
+    <label>Nhập họ tên:</label>
+    <input type="text" name="FullName">
+    <label>Nhập địa chỉchỉ:</label>
+    <input type="text" name="Address">
+    <input type="submit" value="Submit">
+</form>
+
+<h1>@ViewBag.Message</h1>

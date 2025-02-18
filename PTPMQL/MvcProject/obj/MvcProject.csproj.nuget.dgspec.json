@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NET_Core_API\\MvcProject\\MvcProject.csproj": {}
+    "D:\\NET_Core_API\\PTPMQL\\MvcProject\\MvcProject.csproj": {}
   },
   "projects": {
-    "D:\\NET_Core_API\\MvcProject\\MvcProject.csproj": {
+    "D:\\NET_Core_API\\PTPMQL\\MvcProject\\MvcProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NET_Core_API\\MvcProject\\MvcProject.csproj",
+        "projectUniqueName": "D:\\NET_Core_API\\PTPMQL\\MvcProject\\MvcProject.csproj",
         "projectName": "MvcProject",
-        "projectPath": "D:\\NET_Core_API\\MvcProject\\MvcProject.csproj",
+        "projectPath": "D:\\NET_Core_API\\PTPMQL\\MvcProject\\MvcProject.csproj",
         "packagesPath": "C:\\Users\\viqua\\.nuget\\packages\\",
-        "outputPath": "D:\\NET_Core_API\\MvcProject\\obj\\",
+        "outputPath": "D:\\NET_Core_API\\PTPMQL\\MvcProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\viqua\\AppData\\Roaming\\NuGet\\NuGet.Config",
