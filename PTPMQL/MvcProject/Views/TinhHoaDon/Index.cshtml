@@ -1,0 +1,38 @@
+@{
+    ViewBag.Title = "Tính Tiền Hóa Đơn";
+}
+
+<h2>Tính Tiền Hóa Đơn</h2>
+
+<!-- Form nhập liệu -->
+<form method="post">
+    <div>
+        <label>Tên sản phẩm:</label>
+        <input type="text" name="TenSP"  value="@ViewBag.TenSP" required />
+    </div>
+    <div>
+        <label>Số lượng:</label>
+        <input type="number" name="SoLuong"  value="@ViewBag.SoLuong" required />
+    </div>
+    <div>
+        <label>Đơn giá (VND):</label>
+        <input type="number" name="DonGia"  value="@ViewBag.DonGia" required />
+    </div>
+    <button type="submit">Tính Tiền</button>
+</form>
+
+<!-- Hiển thị kết quả -->
+@if (ViewBag.ThanhTien != null)
+{
+    <h3>Thông Tin Hóa Đơn:</h3>
+    <p><strong>Tên sản phẩm:</strong> @ViewBag.TenSP</p>
+    <p><strong>Số lượng:</strong> @ViewBag.SoLuong</p>
+    <p><strong>Đơn giá:</strong> @ViewBag.DonGia VND</p>
+    <p><strong>Thành tiền:</strong> @ViewBag.ThanhTien VND</p>
+}
+
+<!-- Hiển thị thông báo lỗi -->
+@if (ViewBag.Message != null)
+{
+    <p style="color: red;">@ViewBag.Message</p>
+}

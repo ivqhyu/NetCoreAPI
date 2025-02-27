@@ -1,12 +1,9 @@
+D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\MvcProject.exe
+D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\MvcProject.dll
 D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\appsettings.Development.json
 D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\appsettings.json
 D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\MvcProject.staticwebassets.runtime.json
 D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\MvcProject.staticwebassets.endpoints.json
-D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\MvcProject.exe
-D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\MvcProject.deps.json
-D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\MvcProject.runtimeconfig.json
-D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\MvcProject.dll
-D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\MvcProject.pdb
 D:\NET_Core_API\PTPMQL\MvcProject\obj\Debug\net9.0\MvcProject.GeneratedMSBuildEditorConfig.editorconfig
 D:\NET_Core_API\PTPMQL\MvcProject\obj\Debug\net9.0\MvcProject.AssemblyInfoInputs.cache
 D:\NET_Core_API\PTPMQL\MvcProject\obj\Debug\net9.0\MvcProject.AssemblyInfo.cs
@@ -94,5 +91,8 @@ D:\NET_Core_API\PTPMQL\MvcProject\obj\Debug\net9.0\staticwebassets.pack.json
 D:\NET_Core_API\PTPMQL\MvcProject\obj\Debug\net9.0\MvcProject.dll
 D:\NET_Core_API\PTPMQL\MvcProject\obj\Debug\net9.0\refint\MvcProject.dll
 D:\NET_Core_API\PTPMQL\MvcProject\obj\Debug\net9.0\MvcProject.pdb
+D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\MvcProject.deps.json
+D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\MvcProject.runtimeconfig.json
+D:\NET_Core_API\PTPMQL\MvcProject\bin\Debug\net9.0\MvcProject.pdb
 D:\NET_Core_API\PTPMQL\MvcProject\obj\Debug\net9.0\MvcProject.genruntimeconfig.cache
 D:\NET_Core_API\PTPMQL\MvcProject\obj\Debug\net9.0\ref\MvcProject.dll

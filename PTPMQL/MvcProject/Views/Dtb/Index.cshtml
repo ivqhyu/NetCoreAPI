@@ -1,0 +1,43 @@
+@{
+    ViewBag.Title = "Tính điểm trung bình môn học ";
+}
+
+<h2>Tính ĐTB môn học</h2>
+
+<form method="post">
+    <div>
+        <label>Tên sinh vien</label>
+        <input type="string" name="TenSv" step="0.1" required />
+    </div>
+    <div>
+        <label>Tên môn học</label>
+        <input type="string" name="TenMonHoc" step="0.1" required />
+    </div>
+    <div>
+      <label>Điểm A:</label>
+        <input type="number" name="DiemA" step="0.1" required min="0" max="10" />
+    </div>
+    <div>
+        <label>Điểm B:</label>
+        <input type="number" name="DiemB" step="0.1" required min="0" max="10" />
+    </div>
+    <div>
+        <label>Điểm C:</label>
+        <input type="number" name="DiemC" step="0.1" required min="0" max="10" />
+    </div>
+    <button type="submit">Tính Điểm</button>
+</form>
+
+@if (ViewBag.DTB != null)
+{
+    <h3>Kết quả:</h3>
+    <p>Tên sinh viên: <strong>@ViewBag.TenSv</strong></p>
+    <p>Tên môn học: <strong>@ViewBag.TenMonHoc</strong></p>
+    <p>DTB của bạn là: <strong>@ViewBag.DTB</strong></p>
+    <p>Phân loại: <strong>@ViewBag.xeploai</strong></p>
+}
+
+@if (ViewBag.Message != null)
+{
+    <p style="color: red;">@ViewBag.Message</p>
+}

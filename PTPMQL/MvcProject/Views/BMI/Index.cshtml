@@ -1,0 +1,29 @@
+@{
+    ViewBag.Title = "Chỉ số BMI ";
+}
+
+<h2>Tính chỉ số BMI</h2>
+
+<form method="post">
+    <div>
+        <label>Cân nặng (kg):</label>
+        <input type="number" name="weight" step="0.1" required />
+    </div>
+    <div>
+        <label>Chiều cao (m):</label>
+        <input type="number" name="height" step="0.01" required />
+    </div>
+    <button type="submit">Tính BMI</button>
+</form>
+
+@if (ViewBag.BMI != null)
+{
+    <h3>Kết quả:</h3>
+    <p>BMI của bạn: <strong>@ViewBag.BMI</strong></p>
+    <p>Phân loại: <strong>@ViewBag.Category</strong></p>
+}
+
+@if (ViewBag.Message != null)
+{
+    <p style="color: red;">@ViewBag.Message</p>
+}
