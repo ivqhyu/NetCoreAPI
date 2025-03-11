@@ -1,8 +1,15 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace MvcProject.Models
 {
-    public class Employee : Person
+    [Table("Employee")]
+    public class Employee
     {
-        public required string EmployeeId { get; set; }
-        public required int Age { get; set; }
+        [Key]
+        public int EmployeeId { get; set; }
+        public required string FullName { get; set; }
+        public required string Position { get; set; }
+        public required decimal Salary { get; set; }
     }
 }
