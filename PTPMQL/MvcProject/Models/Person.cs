@@ -7,10 +7,10 @@ namespace MvcProject.Models
     public class Person
     {
         [Key]
-        public required string PersonId { get; set; }
-        public required string FullName { get; set; }
-        public required string Address { get; set; }
-        public required string Email { get; set; }
+        public  string PersonId { get; set; } =  string.Empty;
+        public  string FullName { get; set; } = string.Empty;
+        public  string Address { get; set; } = string.Empty;
+        public  string Email { get; set; } = string.Empty;
 
 
     }

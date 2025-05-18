@@ -1,12 +1,22 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+
 namespace MvcProject.Models
 {
-    public class DaiLy
+    public class Daily
     {
-        public required string MaDaiLy { get; set; }
+        [Key]
+        public required string DaiLyID { get; set; }
         public required string TenDaiLy { get; set; }
+
         public required string DiaChi { get; set; }
         public required string NguoiDaiDien { get; set; }
         public required string DienThoai { get; set; }
-        public required string MaHTPP { get; set; } // Khóa ngoại liên kết với HeThongPhanPhoi
+
+        [ForeignKey("HeThongPhanPhoi")]
+        public required string MaHTPP { get; set; }
+
+        public required virtual HeThongPhanPhoi HeThongPhanPhoi { get; set; }
     }
 }

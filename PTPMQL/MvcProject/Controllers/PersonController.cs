@@ -3,6 +3,7 @@ using System.Text.Encodings.Web;
 using Microsoft.EntityFrameworkCore;
 using MvcProject.Data;
 using MvcProject.Models;
+using MvcProject.Models.Process;
 
 
 namespace MvcProject.Controllers
@@ -12,6 +13,7 @@ namespace MvcProject.Controllers
     public class PersonController : Controller
     { 
         private readonly ApplicationDbContext _context;
+        private ExcelProcess _excelProcess = new ExcelProcess();
         public PersonController(ApplicationDbContext context)
         {
             _context = context;
@@ -123,5 +125,48 @@ namespace MvcProject.Controllers
             return (_context.Person?.Any(e => e.PersonId == id)).GetValueOrDefault();
         }
         
-    }
+        public async Task<IActionResult> Upload()  
+        {  
+            return View();  
+        }  
+
+        [HttpPost]  
+        [ValidateAntiForgeryToken]  
+        public async Task<IActionResult> Upload(IFormFile file)  
+        {  
+            if (file != null)  
+            {  
+                string fileExtension = Path.GetExtension(file.FileName);  
+                if (fileExtension != ".xls" && fileExtension != ".xlsx")  
+                {  
+                    ModelState.AddModelError("", "Please choose an Excel file to upload!");  
+                }  
+                else  
+                {  
+                    var fileName = DateTime.Now.ToString("yyyyMMdd_HHmmss") + fileExtension; 
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Uploads", "Excels");
+                    var fileLocation = new FileInfo(filePath).ToString();  
+                    using (var stream = new FileStream(filePath, FileMode.Create))  
+                    {
+                        await file.CopyToAsync(stream);
+                        var dt = _excelProcess.ExcelToDataTable(fileLocation);
+                        for (int i = 0; i < dt.Rows.Count; i++)
+                        { 
+                        var ps = new Person();
+                        ps.PersonId = dt.Rows[i][0].ToString();
+                        ps.FullName = dt.Rows[i][1].ToString();
+                        ps.Address = dt.Rows[i][2].ToString();
+
+                        _context.Add(ps);
+                        }
+                    }
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }  
+                    
+            }
+            return View();
+        }   
+          
+    }  
 }
