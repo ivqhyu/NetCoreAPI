@@ -1,11 +1,13 @@
 using System.Data;
 using System.IO;
- using OfficeOpenXml;
+using OfficeOpenXml;
  
- namespace MvcProject.Models.Process
- {
+namespace MvcProject.Models.Process
+ 
+{    
      public class ExcelProcess
      {
+        
          /// <summary>
          /// Reads data from an Excel file path and converts it to a DataTable.
          /// </summary>

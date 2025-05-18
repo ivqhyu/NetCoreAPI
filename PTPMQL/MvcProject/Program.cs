@@ -1,11 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using MvcProject.Data;
-using OfficeOpenXml; // 👉 Thêm dòng này để dùng ExcelPackage
-
-// 👉 Thiết lập License EPPlus trước khi dùng ExcelPackage
-ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")

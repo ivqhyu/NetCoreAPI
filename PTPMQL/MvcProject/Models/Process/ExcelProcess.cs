@@ -1,7 +1,7 @@
 using System.Data;
 using OfficeOpenXml;
 
-namespace MvcProject.Models.Process
+namespace MvcProjectproject.Models.Process
 {
     public class ExcelProcess
     {
@@ -69,7 +69,7 @@ namespace MvcProject.Models.Process
         /// </summary>
         /// <param name="package">The ExcelPackage containing the workbook data.</param>
         /// <returns>A DataTable containing the extracted data.</returns>
-        public DataTable ExcelToDataTableFromPackage(ExcelPackage excelPackage)
+        public DataTable ExcelToDataTable(ExcelPackage excelPackage)
         {
             DataTable dt = new DataTable();
             ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets[0];

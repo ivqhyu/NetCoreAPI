@@ -47,7 +47,7 @@
           }
         }
       },
-      "EPPlus/8.0.1": {
+      "EPPlus/8.0.5": {
         "type": "package",
         "dependencies": {
           "EPPlus.Interfaces": "8.0.0",
@@ -3248,15 +3248,15 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
-    "EPPlus/8.0.1": {
-      "sha512": "Lk46SFgp9P58+SB8ZHhsAmXlw3skC3+Ky2Nd3xmB+R01z7ZK8AUxivkOg20PZ/O94xMLqQxmORRH5tRr2JmKew==",
+    "EPPlus/8.0.5": {
+      "sha512": "Q8H+E7yDy71I4hCONrb2OSUzkhJI9WSbSeJOCLji5iry45QAiffd14mLtdYocQCYFjQA04iCXomHjZitAJgm4Q==",
       "type": "package",
-      "path": "epplus/8.0.1",
+      "path": "epplus/8.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "EPPlusLogo.png",
-        "epplus.8.0.1.nupkg.sha512",
+        "epplus.8.0.5.nupkg.sha512",
         "epplus.nuspec",
         "lib/net35/EPPlus.dll",
         "lib/net35/EPPlus.xml",
@@ -8537,7 +8537,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "EPPlus >= 8.0.1",
+      "EPPlus >= 8.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.3",
       "Microsoft.EntityFrameworkCore.SQLite >= 9.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3",
@@ -8592,7 +8592,7 @@
         "dependencies": {
           "EPPlus": {
             "target": "Package",
-            "version": "[8.0.1, )"
+            "version": "[8.0.5, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
